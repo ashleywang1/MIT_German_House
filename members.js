@@ -11,4 +11,10 @@ function init() {
 function showInfo(data, tabletop) {
   alert("Successfully processed!")
   console.log(data);
+  var rows = "";
+  $.each(data, function(){
+      rows += "<tr><td><img src=\"" + this.Picture + "\"></td></tr>";
+  });
+
+  $( rows ).appendTo( "#memberTable tbody" );
 }
