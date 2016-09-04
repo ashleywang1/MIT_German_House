@@ -13,7 +13,7 @@ function showInfo(data, tabletop) {
   console.log(data);
   var rows = "";
   $.each(data, function(){
-      rows += "<tr><td><img src=\"" + this.Picture + "\" class=\".profilePic\"></td></tr>";
+      rows += "<tr><td><img src=\"" + this.Picture + "\" style=\"height: 150px\"></td></tr>";
   });
 
   $( rows ).appendTo( "#memberTable tbody" );
