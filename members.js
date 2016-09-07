@@ -9,12 +9,11 @@ function init() {
 }
 
 function showInfo(data, tabletop) {
-  alert("Successfully processed!")
-  console.log(data);
   var rows = "";
   $.each(data, function(){
-      rows += "<tr><td><img src=\"" + this.Picture + "\" style=\"height: 150px\"></td>" +
-      "<td><b>" + this.Name + "</b><br>" + this.Course "<br>" + this.Bio + "</td></tr>";
+      rows += "<tr><td align=\"center\" width=\"50%\"><img src=\"" + this.Picture + 
+      "\" style=\"height: 200px\"><br><b>" + this.Name + "</b><br>" 
+      + this.Course + "<br>" + this.Bio + "</td></tr>";
   });
 
   $( rows ).appendTo( "#memberTable tbody" );
